@@ -1,0 +1,153 @@
+/*
+theme Name: Harvest THEME
+Author: Dara
+Version: 1.0
+*/
+
+body,html {
+  height: 100%;
+  width:100%;
+}
+
+body {
+  /*padding-top: 50px;*/
+}
+
+.wide {
+    height: 619px;
+    /* height: calc(100% - 1px); */
+    background-image: url('./imgs/Story/hp_story-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* left: 62px; */
+    /* position: relative; */
+    /* left: -73px; */
+    background-position: center;
+}
+
+.logo {
+  color:#fff;
+  font-weight:800;
+  font-size:14pt;
+  padding:25px;
+  text-align:center;
+}
+
+.line {
+  padding-top:20px;
+  white-space:no-wrap;
+  overflow:hidden;
+  text-align:center;
+}
+
+.navbar-toggle{
+  float: left;
+}
+
+.navbar-toggle .icon-bar {
+    background: grey;
+}
+
+.pillowsBanner {
+    background-image: url('./imgs/Artwork/hp_logo-brown.png');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* left: 62px; */
+    /* position: relative; */
+    /* left: -73px; */
+    background-position: center;
+    height: 51px;
+}
+
+/*FOOTER*/
+
+.harvestFooter{
+
+         height: 20%;
+    bottom: 0;
+    position: absolute;
+    /* width: inherit; */
+    width: 100%;
+    background-color: rgba(253, 251, 240, 0.59);
+    text-align: center;
+}
+
+.navFoot{
+    display: -webkit-inline-box;
+    padding-top: 5%;
+}
+
+.navFoot>li{
+  padding-right: 22px;
+}
+.footContain{
+  height: 100%;
+}
+/**/
+.rowBanner{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+
+
+@media (min-width: 992px) {
+      .wide {
+      background-image: url('./imgs/Landing/hp_landing-banner-cropped.jpg');
+      /* background-size: cover; */
+      background-repeat: no-repeat;
+      /*background-size: contain;*/
+      /* left: 62px; */
+      /* position: relative; */
+      /* left: -73px; */
+      background-position: center;
+      height: 639px;
+  }
+
+  .logoLanding{
+
+        background-image: url(./imgs/Artwork/hp_logo-white.png);
+        /* height: auto; */
+        /* width: auto; */
+        height: 160px;
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* left: 62px; */
+        /* position: relative; */
+        /* left: -73px; */
+        background-position: center center;
+        text-align: center;
+       /* margin-left: 25%;
+        margin-right: 25%;*/
+
+      
+  }
+
+  .containerBanner{
+
+          text-align: center;
+          margin-top: 13%;
+          position: relative;
+          height: 353px;
+        
+  }
+
+  .underLogo{
+    width: 37%;
+  }
+
+  .bannerCTA{
+
+   border-radius: 0px;
+    width: 34%;
+    background-color: transparent;
+    /* border: 2px; */
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    font-size: 24px;
+
+}
