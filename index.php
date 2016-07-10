@@ -20,6 +20,7 @@
 		<?php wp_head();?>
 	</head>
 <body <?php body_class();?> >
+<div class="pageContainer">
   <div class="row wide rowBanner">
       <div class="containerBanner container">
         <div class="logoLanding"></div>
@@ -33,11 +34,28 @@
       </div>
   </div>
 <div class="container">
-<div class="row">
-  <div class="text-center col-sm-12">
-    <i class="fa fa-angle-down" style="font-size:24px"></i>
+  <div class="row">
+    <div class="text-center col-sm-12 chevy">
+      <i class="fa fa-angle-down"></i>
+    </div>
   </div>
-</div>
+  <div class="row">
+    <div>
+      <h1 id="tagLine">Initiating pillow talk to sleep better, and live well</h1>
+      <br>
+      <br>
+      <br>
+    </div>
+      <div class="col-md-4">
+        <div class="learnMore"></div>
+      </div>
+      <div class="col-md-4">
+        <div class="ourStory"></div>
+      </div>
+      <div class="col-md-4">
+        <div class="ourJournal"></div>
+      </div>
+    </div>
 </div>
 <!-- /.container -->
 <?php get_footer(); ?>
