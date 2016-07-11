@@ -22,7 +22,7 @@
 <body <?php body_class();?>>
 
 <!--site-header -->
-<header class="site-header">
+<header class="site-header harvestHead">
 	<!-- <h1><?php //bloginfo('name'); ?></h1>
 	<h5><?php //bloginfo('description'); ?></h5> -->
 	<div class="navbar navbar navbar-fixed-top">

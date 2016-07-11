@@ -1,7 +1,7 @@
 /*
-theme Name: Harvest THEME
+theme Name: Harvest
 Author: Dara
-Version: 1.0
+Version: 2.0
 */
 
 body,html {
@@ -94,6 +94,10 @@ body {
 
 @media (min-width: 992px) {
 
+  .harvestHead{
+        height: 33px;
+  }
+
   .chevy .fa{
         font-size: 64px;
         color: #d8d8d8;
@@ -176,4 +180,12 @@ body {
     height: 224px;
     background-repeat: no-repeat;  
   }
+
+  /*Products Page*/
+  .rowProductsBanner{
+    background-image: url(./imgs/Shop/hp_shop-banner-cropped.jpg);
+    height: 745px;
+    background-repeat: no-repeat;
+  }
+  /**/
 }

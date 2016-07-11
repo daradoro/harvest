@@ -41,7 +41,17 @@
   </div>
   <div class="row">
     <div>
-      <h1 id="tagLine">Initiating pillow talk to sleep better, and live well</h1>
+       <?php
+    if (have_posts()) : 
+      while(have_posts()) : the_post(); ?>
+
+    <h2 id="tagLine"><?php the_content(); ?></h2>
+    <?php  endwhile;
+
+      else : 
+          echo '<h1>No content Found</h1>';
+    endif;
+    ?>
       <br>
       <br>
       <br>
