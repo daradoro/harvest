@@ -65,21 +65,26 @@ body {
 
 .harvestFooter{
 
-         height: 20%;
+         height: 25%;
     position: absolute;
     /* width: inherit; */
     width: 100%;
-    background-color: rgba(253, 251, 240, 0.59);
+    background-color: #F9F8F4;
     text-align: center;
 }
 
 .navFoot{
     display: -webkit-inline-box;
     padding-top: 5%;
+    margin-left: 2%;
+    color: #86847d;
+    letter-spacing: 1px;
+    padding-bottom: 2%;
 }
 
 .navFoot>li{
   padding-right: 22px;
+  font-weight: bold;
 }
 .footContain{
   height: 100%;
@@ -90,23 +95,94 @@ body {
   margin-right: 0px !important;
 }
 
+/*NAV FOOT SOCIAL*/
+.navSocial {
+  display: -webkit-inline-box;
 
+}
+
+.navSocial>li{
+
+  
+}
+
+.navSocial>li>a>i{
+  font-size: 19px;
+  color: #86847d;
+}
+.navSocial>li>a{
+  padding: 10px 23px;
+}
+
+.socialContainer{
+  width: 37%;
+  background-color: white;
+}
+
+
+
+.baskerVilleItalic{
+
+      text-align: center;
+      font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+      font-style: italic;
+      margin-top: 7%;
+      margin-bottom: 12%;
+      color: rgb(144, 140, 125);
+
+   }
+   .containerBanner .baskerVille{
+        color: white;
+        text-shadow: black;
+        text-shadow: 2px 2px #adadad;
+        letter-spacing: 5px;
+        font-size: 20px;
+   }
+   .baskerVille{
+
+      text-align: center;
+      font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+   }
+
+   .showNav{
+      display: none;
+   }
+
+
+/*DESKTOP*/
 
 @media (min-width: 992px) {
 
+  .desktopTransparent{
+    background-color: transparent;
+  }
+
+  .pageContainer{
+    margin-top: -73px;
+  }
+  
+  .showNav{
+        display: show;
+        background-color: white;
+     }
+
   .harvestHead{
-        height: 33px;
+        
+  }
+  .navRight{
+    float: right;
+  }
+
+  .navRight > ul > li > a{
+    color: white;
   }
 
   .chevy .fa{
         font-size: 64px;
         color: #d8d8d8;
       }
-   #tagLine{
 
-      text-align: center;
-
-   }
       .wide {
       background-image: url('./imgs/Landing/hp_landing-banner-cropped.jpg');
       /* background-size: cover; */
@@ -152,19 +228,17 @@ body {
     width: 37%;
   }
 
-  .bannerCTA{
-
-   border-radius: 0px;
+  .bannerCTA {
+    border-radius: 0px;
     width: 34%;
     background-color: transparent;
     /* border: 2px; */
     border-color: white;
     border-width: 1px;
     color: white;
-    font-size: 24px;
-
-  }
-
+    font-size: 19px;
+    letter-spacing: 4px;
+}
   .learnMore{
     background-image: url(./imgs/Landing/hp_landing-Our_Pillows.jpg);
     height: 224px;

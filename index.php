@@ -20,12 +20,15 @@
 		<?php wp_head();?>
 	</head>
 <body <?php body_class();?> >
+<div class="">
+  <?php get_header(); ?>
+</div>
 <div class="pageContainer">
   <div class="row wide rowBanner">
       <div class="containerBanner container">
         <div class="logoLanding"></div>
         <hr class="underLogo">
-        <h2>the bulkwheat hull pillow company</h2>
+        <h2 class= "baskerVille">the bulkwheat hull pillow company</h2>
         <br>
         <br>
         <br>
@@ -45,16 +48,13 @@
     if (have_posts()) : 
       while(have_posts()) : the_post(); ?>
 
-    <h2 id="tagLine"><?php the_content(); ?></h2>
+    <h2 class="baskerVilleItalic"><?php the_content(); ?></h2>
     <?php  endwhile;
 
       else : 
           echo '<h1>No content Found</h1>';
     endif;
     ?>
-      <br>
-      <br>
-      <br>
     </div>
       <div class="col-md-4">
         <div class="learnMore"></div>
@@ -66,6 +66,16 @@
         <div class="ourJournal"></div>
       </div>
     </div>
+</div>
+<div class="container">
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 </div>
 <!-- /.container -->
 <?php get_footer(); ?>

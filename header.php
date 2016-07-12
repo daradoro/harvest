@@ -25,7 +25,7 @@
 <header class="site-header harvestHead">
 	<!-- <h1><?php //bloginfo('name'); ?></h1>
 	<h5><?php //bloginfo('description'); ?></h5> -->
-	<div class="navbar navbar navbar-fixed-top">
+	<div class="navbar navbar desktopTransparent">
     <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,13 +37,13 @@
       
     </div>
     </div>
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse navRight">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="#">Username</a></li>
+        <li class="active"><a href="#">OUR STORY</a></li>
+        <li><a href="#about">OUR PILLOWS</a></li>
+        <li><a href="#">THE SHOP</a></li>
+        <li><a href="#">JOURNAL</a></li>
+        <li><a href="#about">CONTACT US</a></li>
       </ul>
     </div>
   </div>
