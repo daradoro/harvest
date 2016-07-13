@@ -7,7 +7,6 @@ $image_width = get_option('product_image_width');
 ?>
 <div id="default_products_page_container" class="container wrap wpsc_container">
 <div class="row wide rowProductsBanner"></div>
-  </div>
 <?php wpsc_output_breadcrumbs(); ?>
 
 	<?php do_action('wpsc_top_of_products_page'); // Plugin hook for adding things to the top of the products page, like the live search ?>
@@ -66,7 +65,7 @@ $image_width = get_option('product_image_width');
 		<?php /** start the product loop here */?>
 		<?php while (wpsc_have_products()) :  wpsc_the_product(); ?>
 
-			<div class="col-lg-12 default_product_display product_view_<?php echo wpsc_the_product_id(); ?> <?php echo wpsc_category_class(); ?> group">
+			<div class="col-lg-offset-4 col-lg-4 default_product_display product_view_<?php echo wpsc_the_product_id(); ?> <?php echo wpsc_category_class(); ?> group">
 				<h2 class="prodtitle entry-title">
 							<?php if(get_option('hide_name_link') == 1) : ?>
 								<?php echo wpsc_the_product_title(); ?>
@@ -85,12 +84,12 @@ $image_width = get_option('product_image_width');
 						?>
 
 
-						<div class="col-lg-6 wpsc_description">
+						<div class="wpsc_description">
 							<?php echo wpsc_the_product_description(); ?>
                         </div><!--close wpsc_description-->
 
 						<?php if(wpsc_the_product_additional_description()) : ?>
-						<div class="col-lg-6 additional_description_container">
+						<div class="additional_description_container">
 								<img class="additional_description_button"  src="<?php echo WPSC_CORE_THEME_URL; ?>wpsc-images/icon_window_expand.gif" alt="<?php esc_html_e( 'Additional Description', 'wp-e-commerce' ); ?>" /><a href="<?php echo esc_url( wpsc_the_product_permalink() ); ?>" class="additional_description_link"><?php esc_html_e('More Details', 'wp-e-commerce'); ?>
 							</a>
 							<div class="additional_description">
@@ -104,6 +103,12 @@ $image_width = get_option('product_image_width');
 						<?php else: ?>
 						<?php $action = wpsc_this_page_url(); ?>
 						<?php endif; ?>
+
+						</div>
+					</div>
+					<div>
+					<div class="col-lg-3">
+
 						<form class="product_form"  enctype="multipart/form-data" action="<?php echo esc_url( $action ); ?>" method="post" name="product_<?php echo wpsc_the_product_id(); ?>" id="product_<?php echo wpsc_the_product_id(); ?>" >
 						<?php do_action ( 'wpsc_product_form_fields_begin' ); ?>
 						<?php /** the variation group HTML and loop */?>
@@ -169,7 +174,17 @@ $image_width = get_option('product_image_width');
 							<input type="hidden" value="add_to_cart" name="wpsc_ajax_action"/>
 							<input type="hidden" value="<?php echo wpsc_the_product_id(); ?>" name="product_id"/>
 
-							<!-- END OF QUANTITY OPTION -->
+							
+
+						<?php if((get_option('hide_addtocart_button') == 0) && (get_option('addtocart_or_buynow')=='1')) : ?>
+							<?php echo wpsc_buy_now_button(wpsc_the_product_id()); ?>
+						<?php endif ; ?>
+
+						<?php echo wpsc_product_rater(); ?>
+
+
+					<?php // */ ?>
+					<!-- END OF QUANTITY OPTION -->
 							<?php if((get_option('hide_addtocart_button') == 0) &&  (get_option('addtocart_or_buynow') !='1')) : ?>
 								<?php if(wpsc_product_has_stock()) : ?>
 									<div class="wpsc_buy_button_container">
@@ -191,15 +206,6 @@ $image_width = get_option('product_image_width');
 							</div>
 							<?php do_action ( 'wpsc_product_form_fields_end' ); ?>
 						</form><!--close product_form-->
-
-						<?php if((get_option('hide_addtocart_button') == 0) && (get_option('addtocart_or_buynow')=='1')) : ?>
-							<?php echo wpsc_buy_now_button(wpsc_the_product_id()); ?>
-						<?php endif ; ?>
-
-						<?php echo wpsc_product_rater(); ?>
-
-
-					<?php // */ ?>
 				</div><!--close productcol-->
 			<?php if(wpsc_product_on_special()) : ?><span class="sale"><?php _e('Sale', 'wp-e-commerce'); ?></span><?php endif; ?>
 		</div><!--close default_product_display-->
