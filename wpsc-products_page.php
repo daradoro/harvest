@@ -232,18 +232,15 @@ $image_width = get_option('product_image_width');
 </div><!--close default_products_page_container-->
 <script type="text/javascript">
 	$(document).ready(function(){
-	$('.wpsc_default_product_list').children().hide();
-
-		
-		//for(var i=0; i< $('.buttonsProductContainer').children().length; i++){
-
+			
+			$('.wpsc_default_product_list').children().hide();
+			
 			$('.buttonsProductContainer > .list-group-item').bind("click", function(){
+					
 
-				//$('.wpsc_default_product_list').children().eq(i).hide();
-				var i = $(this).index();
-
-				$('.wpsc_default_product_list').children().eq(i).toggle();
-				//$('.wpsc_default_product_list').children().not(i).hide();
+					var i = $(this).index();
+					$('.wpsc_default_product_list').children().eq(i).toggle();
+					
 
 			});
 
