@@ -1,0 +1,50 @@
+
+.navbar-toggle{
+  float: left;
+}
+
+.navbar-toggle .icon-bar {
+    background: grey;
+}
+
+/*DESKTOP*/
+
+@media (min-width: 992px) {
+  .widthNav{
+    width:100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+  }
+  .navbar-header{
+    /*margin-left: 45% !important;*/
+}
+
+  
+  .desktopTransparent{
+    background-color: transparent;
+  }
+
+  
+
+  .pageContainer{
+    /*margin-top: -73px;*/
+  }
+  
+  .showNav{
+        display: show;
+        background-color: white;
+     }
+
+  .page > h1, .page > h2 {
+    display: none;
+  }
+  
+  .navRight{
+    float: right;
+  }
+
+  .navRight > ul > li > a{
+    color: #7b7370;
+  }
+}

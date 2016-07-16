@@ -41,14 +41,6 @@ body {
   text-align:center;
 }
 
-.navbar-toggle{
-  float: left;
-}
-
-.navbar-toggle .icon-bar {
-    background: grey;
-}
-
 .pillowsBanner {
     background-image: url('./imgs/Artwork/hp_logo-brown.png');
     /* background-size: cover; */
@@ -154,29 +146,6 @@ body {
 
 @media (min-width: 992px) {
 
-  .desktopTransparent{
-    background-color: transparent;
-  }
-
-  .pageContainer{
-    margin-top: -73px;
-  }
-  
-  .showNav{
-        display: show;
-        background-color: white;
-     }
-
-  .harvestHead{
-        
-  }
-  .navRight{
-    float: right;
-  }
-
-  .navRight > ul > li > a{
-    color: white;
-  }
 
   .chevy .fa{
         font-size: 64px;
@@ -223,6 +192,19 @@ body {
           height: 353px;
         
   }
+
+  .pillowsBanner {
+    background-image: url('./imgs/Artwork/hp_logo-brown.png');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* left: 62px; */
+    /* position: relative; */
+    /* left: -73px; */
+    background-position: center;
+    height: 50px;
+    width: 150px;
+}
 
   .underLogo{
     width: 37%;

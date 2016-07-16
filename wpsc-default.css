@@ -22,6 +22,20 @@ Author URI: http://instinct.co.nz
 .buttonsProductContainer > .nav{
 
 }
+
+.productContainer{
+	width: 1300px;
+}
+
+.additional_description_container > img, .additional_description_container a {
+
+	display: none;
+}
+
+.pricedisplay{
+	display: none;
+}
+
 /*---------------------------*/
 /*-----UTILITY-----*/
 .group:after {

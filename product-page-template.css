@@ -1,0 +1,17 @@
+/*DESKTOP*/
+
+@media (min-width: 992px) {
+
+  .wideProductsBanner {
+      background-image: url('./imgs/Shop/hp_shop-banner-cropped.jpg');
+       background-size: cover; 
+      background-repeat: no-repeat;
+      /*background-size: contain;*/
+      /* left: 62px; */
+      /* position: relative; */
+      /* left: -73px; */
+      background-position: center;
+      height: 639px;
+  }
+
+}
