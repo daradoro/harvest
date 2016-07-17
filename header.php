@@ -54,9 +54,7 @@
 <?php 
         
         $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
-        echo $url;
-        if (strpos($url,'journal')) {
-             echo "Good job";
+        if (strpos($url,'journal-post')) {
              include("includes/journal-header.php"); 
         } else {
              include("includes/cart-header.php"); 

@@ -164,6 +164,19 @@ body {
       height: 639px;
   }
 
+  .wide-journal{
+
+    background-image: url('./imgs/Journal/Journal-Landing/hp_journal_banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* left: 62px; */
+    /* position: relative; */
+    /* left: -73px; */
+    /* background-position: center; */
+     height: 639px; 
+  }
+
   .logoLanding{
 
         background-image: url(./imgs/Artwork/hp_logo-white.png);

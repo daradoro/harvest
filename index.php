@@ -24,47 +24,39 @@
   <?php get_header(); ?>
 </div>
 <div class="pageContainer">
-  <div class="row wide rowBanner">
-      <div class="containerBanner container">
-        <div class="logoLanding"></div>
-        <hr class="underLogo">
-        <h2 class= "baskerVille">the bulkwheat hull pillow company</h2>
-        <br>
-        <br>
-        <br>
-        <br>
-        <button class="btn bannerCTA">SHOP OUR COLLECTION</button>
-      </div>
-  </div>
+  <?php 
+        
+        $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+        if(strpos($url, 'journal-post')){
+
+        }else{
+
+           if (strpos($url,'journal')) {
+              include("includes/journal-banner.php"); 
+            } 
+
+        }
+       
+ 
+
+
+  ?>
+
 <div class="container">
-  <div class="row">
-    <div class="text-center col-sm-12 chevy">
-      <i class="fa fa-angle-down"></i>
-    </div>
-  </div>
   <div class="row">
     <div>
        <?php
-    if (have_posts()) : 
-      while(have_posts()) : the_post(); ?>
+            if (have_posts()) : 
+              while(have_posts()) : the_post(); ?>
 
-    <h2 class="baskerVilleItalic"><?php the_content(); ?></h2>
-    <?php  endwhile;
+            <h2 class="baskerVilleItalic"><?php the_content(); ?></h2>
+            <?php  endwhile;
 
-      else : 
-          echo '<h1>No content Found</h1>';
-    endif;
-    ?>
-    </div>
-     <!--  <div class="col-md-4">
-        <div class="learnMore"></div>
-      </div>
-      <div class="col-md-4">
-        <div class="ourStory"></div>
-      </div>
-      <div class="col-md-4">
-        <div class="ourJournal"></div>
-      </div> -->
+              else : 
+                  echo '<h1>No content Found</h1>';
+            endif;
+            ?>
+          </div>
     </div>
 </div>
 <div class="container">
