@@ -60,9 +60,9 @@ $image_width = get_option('product_image_width');
 			</div><!--close w psc_page_numbers_top-->
 		<?php endif; ?>
 
-		<div class="container list-group buttonsProductContainer">
+		<div class="container button-group buttonsProductContainer">
 				<?php while (wpsc_have_products()) :  wpsc_the_product(); ?>
-					<button type="button" class="list-group-item"><?php echo wpsc_the_product_title(); ?></button>
+					<button type="button" class="btn"><?php echo wpsc_the_product_title(); ?></button>
 	 			<?php endwhile; ?>
 		</div>
  		
@@ -262,7 +262,7 @@ $image_width = get_option('product_image_width');
 			
 			$('.wpsc_default_product_list').children().hide();
 			
-			$('.buttonsProductContainer > .list-group-item').bind("click", function(){
+			$('.buttonsProductContainer > .btn').bind("click", function(){
 					
 					var i = $(this).index();
 					$('.wpsc_default_product_list').children().hide();

@@ -23,6 +23,16 @@ Author URI: http://instinct.co.nz
 
 }
 
+.buttonsProductContainer > .btn {
+	    border-radius: 0px;
+    margin: 2%;
+    font-size: 25px;
+    color: #9c9c9b;
+    background-color: #eaeae8;
+    letter-spacing: 1px;
+}
+}
+
 .productContainer{
 	width: 1300px;
 }

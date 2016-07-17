@@ -10,6 +10,14 @@
 /*DESKTOP*/
 
 @media (min-width: 992px) {
+
+  .menu-header{
+    text-align: center;
+
+  }
+  .menu-header > ul {
+    list-style-type: none;
+  }
   .widthNav{
     width:100%;
     padding-left: 3%;
@@ -47,4 +55,24 @@
   .navRight > ul > li > a{
     color: #7b7370;
   }
+  .cartMenu{
+    text-align: center;
+    background-color: #e8e6dc;
+    padding: 7px;
+  }
+  .menu-header{
+    display: table;
+    width: 100%;
+  }
+  #menu-harvest-menu{
+        display: table-header-group;
+  }
+  #menu-harvest-menu > li{
+    display: table-cell;
+  }
+#menu-item-51{
+    width: 94%;
+  }
+
+
 }
