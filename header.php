@@ -50,10 +50,21 @@
     </div>
   </div>
 </div>
-<div class="cartMenu">
-    <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
-  </div>
 
+<?php 
+        
+        $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+        echo $url;
+        if (strpos($url,'journal')) {
+             echo "Good job";
+             include("includes/journal-header.php"); 
+        } else {
+             include("includes/cart-header.php"); 
+        }
+ 
+
+
+  ?>
 
 
 
