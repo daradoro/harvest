@@ -13,6 +13,12 @@ Author URI: http://instinct.co.nz
 */
 
 /*-----------CUSTOM----------*/
+.default_product_display{
+	padding: 0px !important;
+}
+.wp-caption-text{
+	display: none;
+}
 .buttonsProductContainer{
 
 	text-align: center;
@@ -24,14 +30,20 @@ Author URI: http://instinct.co.nz
 }
 
 .buttonsProductContainer > .btn {
-	    border-radius: 0px;
+	 border-radius: 0px;
     margin: 2%;
     font-size: 25px;
     color: #9c9c9b;
     background-color: #eaeae8;
     letter-spacing: 1px;
+ }
+
+ .wpsc_quantity_update{
+
+	    height: 35px;
 }
-}
+
+
 
 .productContainer{
 	width: 1300px;
@@ -43,7 +55,64 @@ Author URI: http://instinct.co.nz
 }
 
 .pricedisplay{
+
+}
+
+.updateIn{
+
+	height: 117%;
+    width: 100%;
+    text-align: center;
+}
+
+.updaterContainer{
+
+	width: 22%;
+	float: right;
+}
+
+.productDescriptionContainer{
+
+	    text-align: right;
+}
+
+.wpsc_product_price > p:nth-child(2){
+
 	display: none;
+}
+
+.additional_description > p:nth-child(1){
+
+	text-align: left;
+    font-size: 19px;
+    color: #8c8c8c;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.updateBtn{
+
+	background-color: white;
+    border-color: grey !important;
+    border-radius: 0px !important;
+
+}
+
+.wpsc_buy_button{
+	    /* color: transparent !important; */
+    text-shadow: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #eaeae8;
+    /* border: 5px solid red; */
+    color: #90908f;
+    font-size: 21px;
+    padding: 14px;
+}
+
+.latoFont{
+	      font-family: Lato, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
 }
 
 /*---------------------------*/

@@ -71,8 +71,11 @@
     display: table-cell;
   }
 #menu-item-51{
-    width: 94%;
+    width: 92%;
   }
+#menu-item-51 > a {
+  margin-left: 12%;
+}
 
 
 }

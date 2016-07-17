@@ -1,3 +1,4 @@
+<?php /* Template Name: Landing page */ ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -56,7 +57,7 @@
     endif;
     ?>
     </div>
-     <!--  <div class="col-md-4">
+      <div class="col-md-4">
         <div class="learnMore"></div>
       </div>
       <div class="col-md-4">
@@ -64,7 +65,7 @@
       </div>
       <div class="col-md-4">
         <div class="ourJournal"></div>
-      </div> -->
+      </div>
     </div>
 </div>
 <div class="container">

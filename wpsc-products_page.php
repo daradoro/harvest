@@ -94,7 +94,7 @@ $image_width = get_option('product_image_width');
 							<?php endif; ?>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 latoFont productDescriptionContainer">
 
 							<?php if(wpsc_the_product_additional_description()) : ?>
 								<div class="additional_description_container">
@@ -118,7 +118,12 @@ $image_width = get_option('product_image_width');
 								<?php do_action ( 'wpsc_product_form_fields_begin' ); ?>
 								<?php /** the variation group HTML and loop */?>
 		                        <?php if (wpsc_have_variation_groups()) { ?>
-		                        <fieldset><legend><?php _e('Product Options', 'wp-e-commerce'); ?></legend>
+		                         <fieldset>
+		                         <legend>
+		                        	
+		                            <?php _e('Product Options', 'wp-e-commerce'); ?>
+		                         	
+		                         </legend>
 								<div class="wpsc_variation_forms">
 		                        	<table>
 									<?php while (wpsc_have_variation_groups()) : wpsc_the_variation_group(); ?>
@@ -137,44 +142,7 @@ $image_width = get_option('product_image_width');
 								<?php } ?>
 								<?php /** the variation group HTML and loop ends here */?>
 
-									<!-- THIS IS THE QUANTITY OPTION MUST BE ENABLED FROM ADMIN SETTINGS -->
-									<?php if(wpsc_has_multi_adding()): ?>
-		                            	<fieldset><legend><?php _e('Quantity', 'wp-e-commerce'); ?></legend>
-										<div class="wpsc_quantity_update">
-		                            
-									<!-- 	<input type="text" id="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>" name="wpsc_quantity_update" size="2" value="1" />  -->
-										<!-- <div class="input-group">
-									          <span class="input-group-btn">
-									              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-									                  <span class="glyphicon glyphicon-minus"></span>
-									              </button>
-									          </span>
-									          <input type="text" id="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>" name="wpsc_quantity_update" value="1" min="1" max="50">
-									          <span class="input-group-btn">
-									              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-									                  <span class="glyphicon glyphicon-plus"></span>
-									              </button>
-									          </span>
-									      </div>
- -->
-									      <div class="input-group">
-											    <span class="input-group-btn">
-											        <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="num"><span class="glyphicon glyphicon-minus"></span></button>
-											    </span>
-											    <input type="text" id="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>" name="wpsc_quantity_update" value="1" min="1" max="50">
-											    <span class="input-group-btn">
-											        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="num"><span class="glyphicon glyphicon-plus"></span></button>
-											    </span>
-											</div>
-																														
-										<input type="hidden" name="key" value="<?php echo wpsc_the_cart_item_key(); ?>"/>
-										<input type="hidden" name="wpsc_update_quantity" value="true" />
-										<input type='hidden' name='wpsc_ajax_action' value='wpsc_update_quantity' />
-		                                </div><!--close wpsc_quantity_update-->
-		                                </fieldset>
-									<?php endif ;?>
-
-									<div class="wpsc_product_price">
+								<div class="wpsc_product_price">
 										<?php if( wpsc_show_stock_availability() ): ?>
 											<?php if(wpsc_product_has_stock()) : ?>
 												<div id="stock_display_<?php echo wpsc_the_product_id(); ?>" class="in_stock"><?php _e('Product in stock', 'wp-e-commerce'); ?></div>
@@ -200,6 +168,43 @@ $image_width = get_option('product_image_width');
 										<?php endif; ?>
 									</div><!--close wpsc_product_price-->
 
+									<!-- THIS IS THE QUANTITY OPTION MUST BE ENABLED FROM ADMIN SETTINGS -->
+									<?php if(wpsc_has_multi_adding()): ?>
+		                            	<!-- <fieldset><legend><?php _e('Quantity', 'wp-e-commerce'); ?></legend> -->
+										<div class="wpsc_quantity_update">
+		                            
+									<!-- 	<input type="text" id="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>" name="wpsc_quantity_update" size="2" value="1" />  -->
+										<!-- <div class="input-group">
+									          <span class="input-group-btn">
+									              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+									                  <span class="glyphicon glyphicon-minus"></span>
+									              </button>
+									          </span>
+									          <input type="text" id="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>" name="wpsc_quantity_update" value="1" min="1" max="50">
+									          <span class="input-group-btn">
+									              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+									                  <span class="glyphicon glyphicon-plus"></span>
+									              </button>
+									          </span>
+									      </div>
+ -->
+									      <div class="input-group updaterContainer">
+											    <span class="input-group-btn">
+											        <button type="button" class="btn updateBtn btn-number" data-type="minus" data-field="num"><span class="glyphicon glyphicon-minus"></span></button>
+											    </span>
+											    <input type="text" class="updateIn" id="wpsc_quantity_update_<?php echo wpsc_the_product_id(); ?>" name="wpsc_quantity_update" value="1" min="1" max="50">
+											    <span class="input-group-btn">
+											        <button type="button" class="btn updateBtn btn-number" data-type="plus" data-field="num"><span class="glyphicon glyphicon-plus"></span></button>
+											    </span>
+											</div>
+																														
+										<input type="hidden" name="key" value="<?php echo wpsc_the_cart_item_key(); ?>"/>
+										<input type="hidden" name="wpsc_update_quantity" value="true" />
+										<input type='hidden' name='wpsc_ajax_action' value='wpsc_update_quantity' />
+		                                </div><!--close wpsc_quantity_update-->
+		                                </fieldset>
+									<?php endif ;?>
+
 									<input type="hidden" value="add_to_cart" name="wpsc_ajax_action"/>
 									<input type="hidden" value="<?php echo wpsc_the_product_id(); ?>" name="product_id"/>
 
@@ -223,9 +228,11 @@ $image_width = get_option('product_image_width');
 												</div><!--close wpsc_loading_animation-->
 													<?php if(wpsc_product_external_link(wpsc_the_product_id()) != '') : ?>
 													<?php $action = wpsc_product_external_link( wpsc_the_product_id() ); ?>
+													
 													<input class="wpsc_buy_button" type="submit" value="<?php echo wpsc_product_external_link_text( wpsc_the_product_id(), __( 'Buy Now', 'wp-e-commerce' ) ); ?>" onclick="return gotoexternallink('<?php echo esc_url( $action ); ?>', '<?php echo wpsc_product_external_link_target( wpsc_the_product_id() ); ?>')">
+												
 													<?php else: ?>
-												<input type="submit" value="<?php _e('Add To Cart', 'wp-e-commerce'); ?>" name="Buy" class="wpsc_buy_button" id="product_<?php echo wpsc_the_product_id(); ?>_submit_button"/>
+												<input type="submit" value="<?php _e('ADD TO CART', 'wp-e-commerce'); ?>" name="Buy" class="wpsc_buy_button" id="product_<?php echo wpsc_the_product_id(); ?>_submit_button"/>
 													<?php endif; ?>
 											</div><!--close wpsc_buy_button_container-->
 										<?php endif ; ?>
