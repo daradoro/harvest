@@ -18,5 +18,31 @@
         text-align: justify;
   }
 
+  .toJournal{
+
+      background-image: url('./imgs/Journal/hp_journal-ad.png');
+       background-size: cover; 
+      background-repeat: no-repeat;
+      /*background-size: contain;*/
+      /* left: 62px; */
+      /* position: relative; */
+      /* left: -73px; */
+      background-position: center;
+      height: 502px;
+
+  }
+  .subscribeWidget{
+    text-align: center;
+    padding: 5%;
+  }
+
+  .readmore-js-toggle{
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 13% !important;
+    margin-left: 45%;
+    margin-top: 3%;
+  }
+
 
 }

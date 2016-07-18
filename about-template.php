@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
-	<script src="http://code.jquery.com/jquery-latest.min.js"
-        type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 		<!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -15,7 +14,8 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/about-template.css" media="screen" />
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<meta charset="<?php bloginfo('charset'); ?>">
+	
+  <meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width">
 		<title><?php bloginfo('name'); ?> </title>
 		<?php wp_head();?>
@@ -60,14 +60,28 @@
   <br>
   <br>
   <hr>
+  <div class="col-lg-6 toJournal">
+  </div>
+  <div class="col-lg-6 baskerVilleItalic subscribeWidget">
+  <h1>We invite you to join our monthly Harvest Pillows Newsletter</h1>
+  <hr>
+  <h2>Get a first look at exclusive offers, new products, tips for living well, sleeping better, plus much more
+  </h2>
+  <button class="btn">Subscribe</button>
+  </div>
   <br>
   <br>
   <br>
   <br>
   <br>
 </div>
-  <script type="text/javascript">
+<script type="text/javascript">
   $(document).ready(function(){
+
+    
+
+
+
   });
   </script>
 <!-- /.container -->
