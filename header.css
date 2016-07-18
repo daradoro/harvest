@@ -61,14 +61,14 @@
     padding: 7px;
   }
   .menu-header{
-    display: table;
+    /*display: table;*/
     width: 100%;
   }
   #menu-harvest-menu{
-        display: table-header-group;
+        /*display: table-header-group;*/
   }
   #menu-harvest-menu > li{
-    display: table-cell;
+    /*display: table-cell;*/
   }
 #menu-item-51{
     width: 92%;
@@ -77,5 +77,9 @@
   margin-left: 12%;
 }
 
+.wpmenucart-display-right{
+  margin-top: -1%;
+  margin-right: 5% !important;
+}
 
 }
