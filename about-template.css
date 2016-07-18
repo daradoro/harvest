@@ -12,5 +12,11 @@
       height: 502px;
   }
 
+  .aboutCopyContainer > .container{
+
+        column-count: 2;
+        text-align: justify;
+  }
+
 
 }
