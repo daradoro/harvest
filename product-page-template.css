@@ -1,5 +1,20 @@
 /*DESKTOP*/
 
+  .wideProductsBanner {
+      background-image: url('./imgs/Shop/hp_shop-banner-cropped.jpg');
+       background-size: cover; 
+      background-repeat: no-repeat;
+      /*background-size: contain;*/
+      /* left: 62px; */
+      /* position: relative; */
+      /* left: -73px; */
+      background-position: center;
+      height: 502px;
+  }
+
+
+
+
 @media (min-width: 992px) {
 
   .wideProductsBanner {
@@ -13,6 +28,20 @@
       background-position: center;
       height: 502px;
   }
+
+  .wideSingleProductBanner {
+         background-image: url('./imgs/Product/hp_products-banner-cropped.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position-y: 25%;
+    /* left: 62px; */
+    /* position: relative; */
+    /* left: -73px; */
+    height: 616px;
+
+
+
 
   
 

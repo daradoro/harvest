@@ -13,6 +13,38 @@ body {
   /*padding-top: 50px;*/
 }
 
+.siteByFoot{
+
+  width: 100%;
+  font-family: lato;
+    font-weight: 700;
+    color: #aba89f;    
+}
+
+.siteByContainer{
+
+  width: 100%;
+  padding: 0px !important;
+}
+
+.navSiteBy > li:nth-child(1){
+  float: left;
+}
+
+.navSiteBy > li {
+      padding: 1%;
+}
+
+.navSiteBy > li:nth-child(3){
+    float: right;
+    margin-top: -68px;
+}
+
+.navSiteBy > li:nth-child(2){
+
+  padding-right: 10%;
+}
+
 .wide {
     height: 619px;
     /* height: calc(100% - 1px); */
@@ -80,11 +112,13 @@ body {
 }
 .footContain{
   height: 100%;
+  font-family: lato;
 }
 /**/
 .rowBanner{
   margin-left: 0px !important;
   margin-right: 0px !important;
+  margin-top: -42px;
 }
 
 /*NAV FOOT SOCIAL*/

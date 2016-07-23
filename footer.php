@@ -27,6 +27,21 @@
 	</ul>
 	</div>
 </div>
+<div class="container siteByFoot">
+<div class="container siteByContainer">
+	<ul class="nav navSiteBy">
+		<li>
+			<p>SITE BY HALLEY THIKA</p>
+		</li>
+		<li>
+			<p>HARVEST PILLOW COMPANY. &copy; 2016.</p>
+		</li>
+		<li>
+			<p> MADE IN A CANADA &#127809;</p>
+		</li>
+	</ul>
+	</div>
+</div>
 </footer>
 <?php wp_footer(); ?>
 </body>

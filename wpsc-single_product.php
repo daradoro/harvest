@@ -9,8 +9,12 @@
 	$image_height = get_option( 'single_view_image_height' );
 ?>
 
-<div id="single_product_page_container">
+<div class="container singleProductBannerText">
+	<p>SOME TEXT</p>
+</div>
 
+<div id="single_product_page_container">
+<h2> DARDARADARADARADARADARA</h2>
 	<?php
 		// Breadcrumbs
 		wpsc_output_breadcrumbs();
@@ -216,3 +220,17 @@
     do_action( 'wpsc_theme_footer' ); ?>
 
 </div><!--close single_product_page_container-->
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+			
+			console.log("WORKING");
+			$('.pageContainer > div').removeClass('wideProductsBanner');
+			$('.pageContainer > .rowBanner').addClass('wideSingleProductBanner');
+
+			
+
+	});
+
+
+</script>

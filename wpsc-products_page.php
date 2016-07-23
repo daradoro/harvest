@@ -71,13 +71,15 @@ $image_width = get_option('product_image_width');
 		<?php while (wpsc_have_products()) :  wpsc_the_product(); ?>
 		<div class="container productContainer">
 			<div class="col-lg-6 default_product_display product_view_<?php echo wpsc_the_product_id(); ?> <?php echo wpsc_category_class(); ?> group">
-				<!-- <h2 class="prodtitle entry-title">
+				
+				<h2 class="prodtitle entry-title">
 							<?php if(get_option('hide_name_link') == 1) : ?>
 								<?php echo wpsc_the_product_title(); ?>
 							<?php else: ?>
 								<a class="wpsc_product_title" href="<?php echo esc_url( wpsc_the_product_permalink() ); ?>"><?php echo wpsc_the_product_title(); ?></a>
 							<?php endif; ?>
-						</h2> -->
+						</h2>
+				
 				
 					<div class="productcol" >
 						<?php
