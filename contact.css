@@ -11,6 +11,51 @@
 
 }
 
+.inquiriesContainer {
+    
+    padding: 36px;
+    letter-spacing: 2px;
+    color: #827f73;
+
+}
+
+.inquiriesLabel{
+
+  font-size: 30px;
+}
+
+.inquiriesText{
+  font-size: 25px;
+}
+
+textarea {
+    width: 20em;
+    height: 4em;
+}
+
+form{
+      text-align: left;
+      font-family: lato;
+      font-style: normal;
+      width: 108%;
+
+}
+
+form > p{
+
+      padding: 15px;
+
+}
+
+input{
+  width: 20em;
+}
+
+.wpcf7-submit{
+  width: 10em;
+  float: right;
+}
+
 /*DESKTOP*/
 
 @media (min-width: 992px) {

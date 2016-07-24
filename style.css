@@ -13,6 +13,13 @@ body {
   /*padding-top: 50px;*/
 }
 
+ .lato{
+
+      /*text-align: left;*/
+      font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+   }
+
 .siteByFoot{
 
   width: 100%;

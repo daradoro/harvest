@@ -31,9 +31,13 @@
   </div>
 <div class="container">
   <div class="row">
-    <div class="col-lg-6">
-      <h1>WORDS</h1>
-      <p>MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOREROEOREORE WORDS WE GET IT WE GET IT WE GET IT WE GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET ITTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT</p>
+    <div class="inquiriesContainer col-lg-6">
+      <p class="inquiriesLabel">CUSTOMER SERVICE</p>
+      <p class="inquiriesText"><?php the_field('customer_service'); ?></p>
+      <p class="inquiriesLabel">STOCKIST INQUIRIES</p>
+      <p class="inquiriesText"><?php the_field('stockist_inquiries'); ?></p>
+      <p class="inquiriesLabel">GENERAL INQUIRIES</p>     
+      <p class="inquiriesText"><?php the_field('general_inquiries'); ?></p>
     </div>
     <div class="col-lg-6">
        <?php
