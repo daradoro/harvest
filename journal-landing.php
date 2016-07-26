@@ -1,4 +1,4 @@
-<?php /* Template Name: contact page */ ?>
+<?php /* Template Name: journal-landing */ ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/contact.css" media="screen">
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -26,38 +25,24 @@
   <?php get_header(); ?>
 </div>
 <div class="pageContainer">
-  <div class="row wide rowBanner">
-      
-  </div>
-<div class="container contactUsUnderBannerText">
-  <h1 class="baskerVille">CONTACT US</h1>
-  <br>
-  <h1 class="baskerVille">We'd Love to Hear from You!</h1>
-</div>  
-<div class="container contactFormAndTextContainer">
+  <?php  include("includes/journal-banner.php"); ?>
+<div class="container">
   <div class="row">
-    <div class="inquiriesContainer col-lg-6">
-      <p class="inquiriesLabel">CUSTOMER SERVICE</p>
-      <p class="inquiriesText"><?php the_field('customer_service'); ?></p>
-      <p class="inquiriesLabel">STOCKIST INQUIRIES</p>
-      <p class="inquiriesText"><?php the_field('stockist_inquiries'); ?></p>
-      <p class="inquiriesLabel">GENERAL INQUIRIES</p>     
-      <p class="inquiriesText"><?php the_field('general_inquiries'); ?></p>
-    </div>
-    <div class="col-lg-6">
+    <div>
        <?php
-    if (have_posts()) : 
-      while(have_posts()) : the_post(); ?>
+            if (have_posts()) : 
+              while(have_posts()) : the_post(); ?>
 
-    <h2 class="baskerVilleItalic"><?php the_content(); ?></h2>
-    <?php  endwhile;
+              
+            
+            <?php  endwhile;
 
-      else : 
-          echo '<h1>No content Found</h1>';
-    endif;
-    ?>
-    </div>   
-  </div>
+              else : 
+                  echo '<h1>No content Found</h1>';
+            endif;
+            ?>
+          </div>
+    </div>
 </div>
 <div class="container">
   <br>
@@ -69,11 +54,5 @@
   <br>
   <br>
 </div>
-
-<script type="text/javascript">
-  $(document).ready(function(){
-      $('.wpcf7-submit').addClass('btn');
-  });
-</script>
 <!-- /.container -->
 <?php get_footer(); ?>

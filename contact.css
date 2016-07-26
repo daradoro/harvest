@@ -16,28 +16,46 @@
     padding: 36px;
     letter-spacing: 2px;
     color: #827f73;
+    margin-top: 1%;
 
+}
+
+.contactUsUnderBannerText{
+
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-top: 2%;
+}
+
+.contactUsUnderBannerText > h1{
+
+  font-size: 51px;
 }
 
 .inquiriesLabel{
 
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .inquiriesText{
-  font-size: 25px;
+  font-size: 18px;
+}
+
+.contactFormAndTextContainer{
+
+  margin-top: 3%;
 }
 
 textarea {
     width: 20em;
-    height: 4em;
+    height: 3em;
 }
 
 form{
       text-align: left;
       font-family: lato;
       font-style: normal;
-      width: 108%;
+      width: 114%;
 
 }
 

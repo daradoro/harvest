@@ -44,19 +44,37 @@
 
 <div class="container">
   <div class="row">
-    <div>
-       <?php
-            if (have_posts()) : 
-              while(have_posts()) : the_post(); ?>
+       <?php 
+            
+            $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+            if(strpos($url, 'journal-post')){
 
-            <h2 class="baskerVilleItalic"><?php the_content(); ?></h2>
-            <?php  endwhile;
+            }else{
 
-              else : 
-                  echo '<h1>No content Found</h1>';
-            endif;
-            ?>
-          </div>
+               if (strpos($url,'journal')) {
+                  $args = array( 'posts_per_page' => 10, 'order'=> 'DESC', 'orderby' => 'title' );
+                    $postslist = get_posts( $args );
+                    foreach ( $postslist as $post ) :
+                      setup_postdata( $post ); ?>
+                      <a href="<?php echo get_permalink(); ?>"> 
+                        <div>
+                          <?php the_date(); ?>
+                          <br />
+                          <?php the_title(); ?>   
+                          <?php the_excerpt(); ?>
+                        </div>
+                      </a>
+                    <?php
+                    endforeach; 
+                    wp_reset_postdata(); 
+                } 
+
+            }
+           
+     
+
+
+  ?>
     </div>
 </div>
 <div class="container">
